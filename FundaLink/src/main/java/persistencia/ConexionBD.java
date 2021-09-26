@@ -18,7 +18,7 @@ public class ConexionBD {
     private String host = "localhost:3306";
     private String baseDatos = "fundalink";
     private String username = "root";
-    private String password = "admin";
+    private String password = "root";
     private Connection conexion;
     private Statement ejecutor;
 
