@@ -1,0 +1,4 @@
+persistencia\FundacionesDAO.class
+logica\ColeccionFundaciones.class
+logica\Fundaciones.class
+persistencia\ConexionBD.class
