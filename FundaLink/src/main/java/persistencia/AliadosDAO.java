@@ -86,7 +86,7 @@ public class AliadosDAO {
      * @return un arraylist de tipo Aliado con la información cargada
      */
     
-    public ArrayList<Aliados> consultarAliadosporFiltro(String filtro) {
+    public ArrayList<Aliados> consultarAliadosPorFiltro(String filtro) {
         ArrayList<Aliados> lista = new ArrayList<>();
         ConexionBD con = new ConexionBD();
         String sql = "SELECT * " +

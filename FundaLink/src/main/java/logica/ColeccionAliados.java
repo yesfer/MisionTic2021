@@ -82,7 +82,7 @@ public class ColeccionAliados {
      */
     public Aliados cargarUnAliado(int id) {
         AliadosDAO dao = new AliadosDAO();
-        Aliados j = dao.consultarAliados(id);
+        Aliados j = dao.consultarAliado(id);
         return j;
     }
     
