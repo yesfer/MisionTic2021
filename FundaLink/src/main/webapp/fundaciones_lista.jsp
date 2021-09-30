@@ -40,9 +40,11 @@ body {
 </style>
     </head>
     <body>
-        <div class="container mt-5">
+        <div class="container mt-3">
             <div class="text-center">
-            <img src="img/logo1.png" class="img-fluid" alt="Responsive image" align:"center">
+            <center>    
+                <a href="index.html"> <img src="img/logo.png" alt="Home" width="400" height="120"></a>
+            </center>
            
             </div>
             <h3 class="mb-3">Lista de Fundaciones</h3>

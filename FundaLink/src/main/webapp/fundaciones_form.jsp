@@ -38,7 +38,9 @@ body {
 
     </head>
 <body>
-     <img src="img/logo.png" class="img-fluid" alt="Responsive image" align:"center">
+     <center>    
+         <a href="index.html"> <img src="img/logo.png" alt="Home" width="400" height="120"></a>
+            </center>
 
     <hr>  
 <h1 style="text-align:center"> 
