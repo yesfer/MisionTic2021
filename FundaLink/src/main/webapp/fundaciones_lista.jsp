@@ -43,7 +43,7 @@ body {
         <div class="container mt-5">
             <div class="text-center">
             <img src="img/logo1.png" class="img-fluid" alt="Responsive image" align:"center">
-            <h2 Style="text-align:center"> Logo FundaLink </h2>
+           
             </div>
             <h3 class="mb-3">Lista de Fundaciones</h3>
             <hr>

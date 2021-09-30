@@ -38,10 +38,8 @@ body {
 
     </head>
 <body>
-    <h2 style="text-align:center"> 
-Logo de Fundalink
+     <img src="img/logo.png" class="img-fluid" alt="Responsive image" align:"center">
 
-</h2>
     <hr>  
 <h1 style="text-align:center"> 
     <% 
