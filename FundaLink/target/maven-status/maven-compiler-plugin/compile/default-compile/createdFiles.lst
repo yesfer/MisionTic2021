@@ -1,2 +1,7 @@
 persistencia\FundacionesDAO.class
+logica\ColeccionAliados.class
+persistencia\AliadosDAO.class
+logica\ColeccionFundaciones.class
 logica\Fundaciones.class
+logica\Aliados.class
+persistencia\ConexionBD.class
