@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="2" name="test.TestGeneral" time="0.512" errors="0" skipped="0">
+<testsuite tests="2" failures="2" name="test.TestGeneral" time="0.888" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
@@ -64,7 +64,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="test.TestGeneral" name="verificarCargaFundaciones" time="0.48">
+  <testcase classname="test.TestGeneral" name="verificarCargaFundaciones" time="0.852">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
 	at persistencia.FundacionesDAO.consultarFundaciones(FundacionesDAO.java:33)
 	at test.TestGeneral.verificarCargaFundaciones(TestGeneral.java:32)
@@ -164,7 +164,7 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </system-err>
   </testcase>
-  <testcase classname="test.TestGeneral" name="verificarConexion" time="0.032">
+  <testcase classname="test.TestGeneral" name="verificarConexion" time="0.036">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)

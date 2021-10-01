@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-01T11:46:16 COT" name="test.TestGeneral" finished-at="2021-10-01T11:46:17 COT" duration-ms="537">
+  <suite started-at="2021-10-01T18:03:01 COT" name="test.TestGeneral" finished-at="2021-10-01T18:03:02 COT" duration-ms="921">
     <groups>
     </groups>
-    <test started-at="2021-10-01T11:46:16 COT" name="Command line test" finished-at="2021-10-01T11:46:17 COT" duration-ms="537">
+    <test started-at="2021-10-01T18:03:01 COT" name="Command line test" finished-at="2021-10-01T18:03:02 COT" duration-ms="921">
       <class name="test.TestGeneral">
-        <test-method signature="verificarCargaFundaciones()[pri:0, instance:test.TestGeneral@7a69b07]" started-at="2021-10-01T11:46:16 COT" name="verificarCargaFundaciones" finished-at="2021-10-01T11:46:17 COT" duration-ms="476" status="FAIL">
+        <test-method signature="verificarCargaFundaciones()[pri:0, instance:test.TestGeneral@7a69b07]" started-at="2021-10-01T18:03:01 COT" name="verificarCargaFundaciones" finished-at="2021-10-01T18:03:02 COT" duration-ms="849" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -56,7 +56,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verificarCargaFundaciones -->
-        <test-method signature="verificarConexion()[pri:0, instance:test.TestGeneral@7a69b07]" started-at="2021-10-01T11:46:17 COT" name="verificarConexion" finished-at="2021-10-01T11:46:17 COT" duration-ms="34" status="FAIL">
+        <test-method signature="verificarConexion()[pri:0, instance:test.TestGeneral@7a69b07]" started-at="2021-10-01T18:03:02 COT" name="verificarConexion" finished-at="2021-10-01T18:03:02 COT" duration-ms="37" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
