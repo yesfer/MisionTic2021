@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.TestGeneral
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.627 sec <<< FAILURE!
-verificarCargaFundaciones(test.TestGeneral)  Time elapsed: 0.852 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at persistencia.FundacionesDAO.consultarFundaciones(FundacionesDAO.java:33)
-	at test.TestGeneral.verificarCargaFundaciones(TestGeneral.java:32)
-
-verificarConexion(test.TestGeneral)  Time elapsed: 0.036 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at test.TestGeneral.verificarConexion(TestGeneral.java:24)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.239 sec
