@@ -176,4 +176,22 @@ public class FundacionesDAO {
         
         return filas;
     }
+    
+    /**
+     * Envía la sentencia SQL para borrar los datos de una Fundacion existente
+     * @param j un objeto de tipo Fundacion
+     * @return un número indicando la cantidad de registros afectados
+     */
+    public int borrarFundacionExistente(Fundaciones j) {
+        
+        int filas = 0;
+                                        
+        String sql = "DELETE fundaciones "+
+                     "SET Nombre='" + j.getNombre() + "', Direccion = '" + j.getDireccion() + "',Email = '" + j.getEmail() + "', Representante = '" + j.getRepresentante() + "',  URL = '" + j.getURL() + "', Telefono = '" + j.getTelefono() + "', Tipo = '" + j.getTipo() + "', Username= '" + j.getUsername() + "', Password= '" + j.getPassword() + "' " +
+                     "WHERE idFundacion ='" + j.getIdFundacion() + "'" ;
+        ConexionBD con = new ConexionBD();
+        filas = con.ejecutarUpdate(sql);
+        
+        return filas;
+    }
 }

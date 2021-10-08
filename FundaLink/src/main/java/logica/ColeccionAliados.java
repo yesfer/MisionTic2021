@@ -42,7 +42,7 @@ public class ColeccionAliados {
 	AliadosDAO dao= new AliadosDAO();
 	
    	
-        if(j.getIdAliado()==0){
+        if(j.getIdAlidos()==0){
             int id = dao.guardarNuevoAliado(j);
         
             if (id > 0){

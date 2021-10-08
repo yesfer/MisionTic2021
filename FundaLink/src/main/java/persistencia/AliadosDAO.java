@@ -26,19 +26,21 @@ public class AliadosDAO {
     public ArrayList<Aliados> consultarAliados() {
         ArrayList<Aliados> lista = new ArrayList<>();
         ConexionBD con = new ConexionBD();
-        String sql = "SELECT idAliado, Nombre, Telefono, Email, Username, Password " +
+        String sql = "SELECT idAlidos, Nombre, Telefono, Email, Alianzas_idAlianzas, Alianzas_Fundaciones_idFundacion, Username, Password " +
                      "FROM aliados ";
         ResultSet rs = con.ejecutarQuery(sql);
         try {
             while (rs.next()) {
-                int idAliado = rs.getInt("idAliado");
+                int idAlidos = rs.getInt("idAlidos");
                 String Nombre = rs.getString("Nombre");
                 String Telefono = rs.getString("Telefono");
                 String Email = rs.getString("Email");
+                int Alianzas_idAlianzas = rs.getInt("Alianzas_idAlianzas");
+                int Alianzas_Fundaciones_idFundacion = rs.getInt("Alianzas_Fundaciones_idFundacion");
                 String Username = rs.getString("Username");
                 String Password = rs.getString("Password");
                 
-                Aliados j = new Aliados(idAliado, Nombre, Telefono, Email, Username, Password);
+                Aliados j = new Aliados(idAlidos, Nombre, Telefono, Email, Alianzas_idAlianzas, Alianzas_Fundaciones_idFundacion, Username, Password);
                 lista.add(j);
             }
         } catch (SQLException ex) {
@@ -53,20 +55,22 @@ public class AliadosDAO {
     public Aliados  consultarAliado(int idAConsultar) {
         Aliados j = null;
         ConexionBD con = new ConexionBD();
-        String sql = "SELECT idAliado, Nombre, Telefono, Email, Username, Password " +
+        String sql = "SELECT idAlidos, Nombre, Telefono, Email, Alianzas_idAlianzas, Alianzas_Fundaciones_idFundacion, Username, Password " +
                      "FROM aliados " +
-                     "WHERE idAliado = "+idAConsultar +" ";
+                     "WHERE idAlidos = "+idAConsultar +" ";
         ResultSet rs = con.ejecutarQuery(sql);
         try {
             while (rs.next()) {
-                int idAliado = rs.getInt("idAliado");
+                int idAlidos = rs.getInt("idAlidos");
                 String Nombre = rs.getString("Nombre");
                 String Telefono = rs.getString("Telefono");
                 String Email = rs.getString("Email");
+                int Alianzas_idAlianzas = rs.getInt("Alianzas_idAlianzas");
+                int Alianzas_Fundaciones_idFundacion = rs.getInt("Alianzas_Fundaciones_idFundacion");
                 String Username = rs.getString("Username");
                 String Password = rs.getString("Password");
                 
-                j = new Aliados(idAliado, Nombre, Telefono, Email, Username, Password);
+                j = new Aliados(idAlidos, Nombre, Telefono, Email, Alianzas_idAlianzas, Alianzas_Fundaciones_idFundacion, Username, Password);
                 
             }
         } catch (SQLException ex) {
@@ -98,14 +102,16 @@ public class AliadosDAO {
         ResultSet rs = con.ejecutarQuery(sql);
         try {
             while (rs.next()) {
-                int idAliado = rs.getInt("idAliado");
+                int idAlidos = rs.getInt("idAlidos");
                 String Nombre = rs.getString("Nombre");
                 String Telefono = rs.getString("Telefono");
                 String Email = rs.getString("Email");
+                int Alianzas_idAlianzas = rs.getInt("Alianzas_idAlianzas");
+                int Alianzas_Fundaciones_idFundacion = rs.getInt("Alianzas_Fundaciones_idFundacion");
                 String Username=rs.getString("Username");
                 String Password=rs.getString("Password");
                 
-                Aliados j = new Aliados(idAliado, Nombre, Telefono, Email, Username, Password);
+                Aliados j = new Aliados(idAlidos, Nombre, Telefono, Email, Alianzas_idAlianzas, Alianzas_Fundaciones_idFundacion, Username, Password);
                 lista.add(j);
             }
         } catch (SQLException ex) {
@@ -125,8 +131,8 @@ public class AliadosDAO {
      */
       public int guardarNuevoAliado(Aliados j) {
         ConexionBD con = new ConexionBD();                                                                         
-        String sql = "INSERT INTO aliados (Nombre, Telefono, Email, Username, Password) "+ 
-                     "VALUES ('" + j.getNombre() + "', '" + j.getTelefono() + "', '" + j.getEmail() + "', '" + j.getUsername() + "', '" + j.getPassword() + "') ";
+        String sql = "INSERT INTO aliados (Nombre, Telefono, Email, Alianzas_idAlianzas, Alianzas_Fundaciones_idFundacion, Username, Password) "+ 
+                     "VALUES ('" + j.getNombre() + "', '" + j.getTelefono() + "', '" + j.getEmail() + "', Alianza_idAlianzas= '" + j.getAlianzas_idAlianzas() + "', Alianzas_Fundaciones_idFundacion = '" + j.getAlianzas_Fundaciones_idFundacion() + "', '" + j.getUsername() + "', '" + j.getPassword() + "') ";
         
         
         //System.out.println(sql);
@@ -156,8 +162,8 @@ public class AliadosDAO {
         int filas = 0;
                                         
         String sql = "UPDATE aliados "+
-                     "SET Nombre='" + j.getNombre() + "', Telefono = '" + j.getTelefono() + "', Email = '" + j.getEmail() + "', Username= '" + j.getUsername() + "', Password= '" + j.getPassword() + "' " +
-                     "WHERE idAliado ='" + j.getIdAliado() + "'" ;
+                     "SET Nombre='" + j.getNombre() + "', Telefono = '" + j.getTelefono() + "', Email = '" + j.getEmail() + "', Alianza_idAlianzas= '" + j.getAlianzas_idAlianzas() + "', Alianzas_Fundaciones_idFundacion = '" + j.getAlianzas_Fundaciones_idFundacion() + "'+, Username= '" + j.getUsername() + "', Password= '" + j.getPassword() + "' " +
+                     "WHERE idAlidos ='" + j.getIdAlidos() + "'" ;
         ConexionBD con = new ConexionBD();
         filas = con.ejecutarUpdate(sql);
         
