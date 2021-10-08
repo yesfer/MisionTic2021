@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\E5-473\Documents\GitHub\MisionTic2021\FundaLink\src\main\java\persistencia\ConexionBD.java
 C:\Users\E5-473\Documents\GitHub\MisionTic2021\FundaLink\src\main\java\controladores\ControladorFundaciones.java
 C:\Users\E5-473\Documents\GitHub\MisionTic2021\FundaLink\src\main\java\logica\Aliados.java
@@ -6,3 +7,12 @@ C:\Users\E5-473\Documents\GitHub\MisionTic2021\FundaLink\src\main\java\logica\Co
 C:\Users\E5-473\Documents\GitHub\MisionTic2021\FundaLink\src\main\java\persistencia\AliadosDAO.java
 C:\Users\E5-473\Documents\GitHub\MisionTic2021\FundaLink\src\main\java\logica\ColeccionFundaciones.java
 C:\Users\E5-473\Documents\GitHub\MisionTic2021\FundaLink\src\main\java\logica\Fundaciones.java
+=======
+C:\RepositorioFundaLink\CloneFundaLink_29_SEP_2021\FundaLink\src\main\java\logica\ColeccionAliados.java
+C:\RepositorioFundaLink\CloneFundaLink_29_SEP_2021\FundaLink\src\main\java\persistencia\AliadosDAO.java
+C:\RepositorioFundaLink\CloneFundaLink_29_SEP_2021\FundaLink\src\main\java\persistencia\ConexionBD.java
+C:\RepositorioFundaLink\CloneFundaLink_29_SEP_2021\FundaLink\src\main\java\persistencia\FundacionesDAO.java
+C:\RepositorioFundaLink\CloneFundaLink_29_SEP_2021\FundaLink\src\main\java\logica\Aliados.java
+C:\RepositorioFundaLink\CloneFundaLink_29_SEP_2021\FundaLink\src\main\java\logica\Fundaciones.java
+C:\RepositorioFundaLink\CloneFundaLink_29_SEP_2021\FundaLink\src\main\java\logica\ColeccionFundaciones.java
+>>>>>>> main

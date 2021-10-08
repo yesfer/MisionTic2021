@@ -26,12 +26,20 @@ public class AliadosDAO {
     public ArrayList<Aliados> consultarAliados() {
         ArrayList<Aliados> lista = new ArrayList<>();
         ConexionBD con = new ConexionBD();
+<<<<<<< HEAD
         String sql = "SELECT idAlidos, Nombre, Telefono, Email, Alianzas_idAlianzas, Alianzas_Fundaciones_idFundacion, Username, Password " +
+=======
+        String sql = "SELECT idAlido, Nombre, Telefono, Email, Username, Password " +
+>>>>>>> main
                      "FROM aliados ";
         ResultSet rs = con.ejecutarQuery(sql);
         try {
             while (rs.next()) {
+<<<<<<< HEAD
                 int idAlidos = rs.getInt("idAlidos");
+=======
+                int idAliado = rs.getInt("idAlido");
+>>>>>>> main
                 String Nombre = rs.getString("Nombre");
                 String Telefono = rs.getString("Telefono");
                 String Email = rs.getString("Email");
@@ -45,8 +53,9 @@ public class AliadosDAO {
             }
         } catch (SQLException ex) {
            
+            System.out.println("Error");
             con.desconectar();
-            return null;
+            
         }
         con.desconectar();
         return lista;
@@ -55,13 +64,21 @@ public class AliadosDAO {
     public Aliados  consultarAliado(int idAConsultar) {
         Aliados j = null;
         ConexionBD con = new ConexionBD();
+<<<<<<< HEAD
         String sql = "SELECT idAlidos, Nombre, Telefono, Email, Alianzas_idAlianzas, Alianzas_Fundaciones_idFundacion, Username, Password " +
+=======
+        String sql = "SELECT idAlido, Nombre, Telefono, Email, Username, Password " +
+>>>>>>> main
                      "FROM aliados " +
                      "WHERE idAlidos = "+idAConsultar +" ";
         ResultSet rs = con.ejecutarQuery(sql);
         try {
             while (rs.next()) {
+<<<<<<< HEAD
                 int idAlidos = rs.getInt("idAlidos");
+=======
+                int idAliado = rs.getInt("idAlido");
+>>>>>>> main
                 String Nombre = rs.getString("Nombre");
                 String Telefono = rs.getString("Telefono");
                 String Email = rs.getString("Email");
@@ -102,7 +119,11 @@ public class AliadosDAO {
         ResultSet rs = con.ejecutarQuery(sql);
         try {
             while (rs.next()) {
+<<<<<<< HEAD
                 int idAlidos = rs.getInt("idAlidos");
+=======
+                int idAliado = rs.getInt("idAlido");
+>>>>>>> main
                 String Nombre = rs.getString("Nombre");
                 String Telefono = rs.getString("Telefono");
                 String Email = rs.getString("Email");
@@ -162,8 +183,13 @@ public class AliadosDAO {
         int filas = 0;
                                         
         String sql = "UPDATE aliados "+
+<<<<<<< HEAD
                      "SET Nombre='" + j.getNombre() + "', Telefono = '" + j.getTelefono() + "', Email = '" + j.getEmail() + "', Alianza_idAlianzas= '" + j.getAlianzas_idAlianzas() + "', Alianzas_Fundaciones_idFundacion = '" + j.getAlianzas_Fundaciones_idFundacion() + "'+, Username= '" + j.getUsername() + "', Password= '" + j.getPassword() + "' " +
                      "WHERE idAlidos ='" + j.getIdAlidos() + "'" ;
+=======
+                     "SET Nombre='" + j.getNombre() + "', Telefono = '" + j.getTelefono() + "', Email = '" + j.getEmail() + "', Username= '" + j.getUsername() + "', Password= '" + j.getPassword() + "' " +
+                     "WHERE idAlido ='" + j.getIdAliado() + "'" ;
+>>>>>>> main
         ConexionBD con = new ConexionBD();
         filas = con.ejecutarUpdate(sql);
         
