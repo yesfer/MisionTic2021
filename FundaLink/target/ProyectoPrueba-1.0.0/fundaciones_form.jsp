@@ -35,7 +35,6 @@ body {
 }
 
 </style>
-<<<<<<< HEAD
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -69,14 +68,6 @@ body {
             </div>
         </nav>
     
-=======
-
-    </head>
-<body>
-     <center>    
-         <a href="index.html"> <img src="img/logo.png" alt="Home" width="400" height="120"></a>
-            </center>
->>>>>>> main
 
     <hr>  
 <h1 style="text-align:center"> 
@@ -88,7 +79,6 @@ body {
       if (accion1.equals("nuevo")){
          etiqueta = "Nueva Fundación";
          btnLabel = "Guardar Fundación Nueva";
-<<<<<<< HEAD
         }
       if (accion1.equals("editar1")){
          etiqueta = "Borrar Fundación";
@@ -96,9 +86,6 @@ body {
         
       }
       if (accion1.equals("editar")){
-=======
-      }else{
->>>>>>> main
          etiqueta = "Editar Fundación ";
          btnLabel = "Guardar Fundación Editada";
       }
@@ -140,11 +127,8 @@ body {
                     Password = j.getPassword();
                     Tipo = j.getTipo();
                 }
-<<<<<<< HEAD
                 
                
-=======
->>>>>>> main
                 else {
                 id=0;
                 }                             
@@ -157,13 +141,8 @@ body {
     <div class="form-row " >   
             <div class="col" ><!-- comment -->
             <div class="p-2">
-<<<<<<< HEAD
                 <label for="txtId" hidden >Id:<span class="blue" ></span></label>
                 <input type="text" hidden class="col-form-control col-1 " id="txtId" name="txtId" value="<%= id %>" readonly>
-=======
-                <label for="txtId" >Id:<span class="blue" ></span></label>
-                <input type="text" class="col-form-control col-1 " id="txtId" name="txtId" value="<%= id %>" readonly>
->>>>>>> main
             </div>
         </div>
     </div>
@@ -237,17 +216,10 @@ body {
                                               
             <select class="custom-select" name="txtTipo" required>
                 
-<<<<<<< HEAD
                 <option selected  value="<%= Tipo %>"><%= Tipo %></option>
                             
                 <option value="Sociales">Sociales</option>                   
                <option  value="Ambientales">Ambientales</option>
-=======
-                <option selected disabled value="">Tipo: <%= Tipo %></option>
-                             
-                <option value="Sociales">Sociales</option>
-                <option value="Ambientales">Ambientales</option>
->>>>>>> main
                 <option value="Culturales">Culturales</option>
                 <option value="Otras">Otras</option>
             </select>
@@ -259,11 +231,7 @@ body {
     <div class="form-row">
 	<div class="mx-auto mt-5">
         <button class="btn btn-primary" type="submit" id="btnSubmit" name="btnSubmit" value="<%= accion %>"><%= btnLabel %></button>
-<<<<<<< HEAD
        
-=======
-        <button class="btn btn-success ml-3" type="reset" id="btnReset" name="btnReset">Limpiar Datos</button>
->>>>>>> main
     </div>
  </div>
 
