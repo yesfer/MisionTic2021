@@ -85,6 +85,13 @@ public class ColeccionFundaciones {
         Fundaciones j = dao.consultarFundacion(id);
         return j;
     }
-    
-    
+     /**
+     * Carga la información de una sola Fundacion ha ser borrada de la base de datos
+     * @return true si carga la Fundacion, o false si no se logró cargar
+     */
+    public Fundaciones borrarUnaFundacion(int id) {
+        FundacionesDAO dao = new FundacionesDAO();
+        Fundaciones j = dao.consultarFundacion(id);
+        return j;
+    }
 }

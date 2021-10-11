@@ -1,4 +1,5 @@
 persistencia\FundacionesDAO.class
+controladores\ControladorFundaciones.class
 logica\ColeccionAliados.class
 persistencia\AliadosDAO.class
 logica\ColeccionFundaciones.class

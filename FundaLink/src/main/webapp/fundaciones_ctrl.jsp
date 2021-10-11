@@ -44,8 +44,11 @@
             
                 
                 j = new Fundaciones(id, Nombre, Direccion, Email, Representante, Url, Telefono, Tipo, Username, Password);
-            }    
-                
+            }   
+            
+            if (accion.equals("editar1")){
+              j = new Fundaciones(id, Nombre, Direccion, Email, Representante, Url, Telefono, Tipo, Username, Password);
+            }
                 ColeccionFundaciones coleccion= new ColeccionFundaciones();
                 boolean guardado = coleccion.guardarFundacion(j);
                  
@@ -58,6 +61,9 @@
                      //JOptionPane.showMessageDialog(null, "Información  NO guardada  !");
                       out.println("Información de fundación no guardada");
 		}
+                
+                 
+                
                                                                                      
             //out.println ("Los datos enviados fueron: Nombre: \n"+Nombre+" Direccion: \n"+Direccion+ " Email: "+Email+" Representante: "+Representante+" Url: "+Url+" Telefono: "+Telefono+" Usuario: "+Username+" Contraseña: "+Password);
         %>
